@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import Login from './Login';
 import './App.css';
+import { getTokenFromUrl } from './spotify';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+  const [token, setToken] = useState(null);
+  
+    useEffect(() => {
+      const hash = getTokenFromUrl();
+      window.location.hash = '';
+      const _token = hash.access_token;
+
+      if (_token) {
+        setToken(_token);
+      }
+      console.log(token);
+    }, [])
+
+    return (
+      <div className="App">
+      {
+        token ? (
+        <h1>You Logged in</h1>
+      ) : (
+        <Login />
+      )
+      }
     </div>
   );
 }
