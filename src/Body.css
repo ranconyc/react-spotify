@@ -1,0 +1,58 @@
+.body {
+  height: 100vh;
+  flex: 0.8;
+  background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+  padding: 20px;
+  color: #fff;
+  overflow-y: overlay;
+}
+
+.body-info {
+  display: flex;
+  align-items: flex-end; 
+  padding: 10px;
+}
+
+.body-info > img {
+  height: 20vw;
+  margin: 0 20px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5) ;
+  min-width: 190px;
+  min-height: 190px;
+}
+
+.body-info-text {
+  flex: 1;
+}
+
+.body-info-text > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.body-info-text > p {
+  font-size: 14px;
+}
+
+.body-icons {
+  display: flex;
+  align-items: center;
+}
+.body-icons > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.body-shuffle {
+  font-size: 80px !important;
+  margin: 20px 0 20px 30px;
+}
+
+.body-shuffle:hover {
+  transition: 100ms transform  ease-in;
+  transform: scale(1.08) !important;
+}
+
+.diveder {
+  border-bottom: 1px solid gray;
+  margin: 0 0 5px 20px;
+}

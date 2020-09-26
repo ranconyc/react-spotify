@@ -1,0 +1,22 @@
+.sidebar-option {
+  display: flex;
+  align-items: center;
+  color: gray;
+  margin: 10px;
+  cursor: pointer;
+  transition: 200ms color ease-in;
+}
+
+.sidebar-option:hover {
+  color: #fff;
+}
+
+.sidebar-option-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sidebar-option > p {
+  margin: 7px 0 0 10px;
+  font-size: 14px;
+}

@@ -1,0 +1,33 @@
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.2;
+  padding: 0 10px 0 10px;
+  min-width: 230px;
+  height: 100vh;
+  color: #ffffff;
+  background: #040404;
+  margin-bottom: 65px;
+}
+.side-bar > img {
+  margin-right: auto;
+  height: 85px;
+  padding: 10px;
+}
+
+.side-bar > hr {
+  border: 0.5px solid #b3b3b3;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.sidebar-title {
+  margin-left: 10px;
+  padding: 5px 5px 0 5px;
+  font-size: 14px;
+}
+
+.sidebar-playlists {
+  overflow: Scroll;
+  margin-bottom: 10px;
+}
